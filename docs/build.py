@@ -19,6 +19,13 @@ with open("writeup.html", "r") as f:
 title = input("title: ")
 passwd = input("passwd: ")
 
+print(passwd == None)
+
+js = ""
+if passwd == "":
+    passwd = "unlocked"
+    js = "decrypt('unlocked');"
+
 with open(f"src/{title}.md", "r") as f:
     md = f.read()
 
@@ -30,5 +37,5 @@ os.system(f"mkdir {title}")
 os.chdir(title)
 
 with open(f"index.html", "w") as f:
-    html = template.render(title=title, encrypted=encrypted, passwd_hash=passwd_hash)
+    html = template.render(title=title, encrypted=encrypted, passwd_hash=passwd_hash, js=js)
     f.write(html)
