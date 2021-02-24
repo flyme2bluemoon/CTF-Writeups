@@ -28,6 +28,17 @@ button {
     margin: 0% 5%;
 }
 
+.card {
+    background-color: lightgrey;
+    border: 5px;
+    border-color: gray;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px;
+    margin: 0% 5%;
+}
+
 a {
     color: inherit; /* blue colors for links too */
     text-decoration: inherit; /* no underline */

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="../styles.css" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="../main.js" defer></script>
+
+    <title>CTF writeups by Matthew</title>
+</head>
+<body>
+    <h1 id="title">google_ctf_2020</h1>
+    <form autocomplete="off" onsubmit="decrypt(); return false;" id="hash_form">
+        <label for="hash_input" class="form-label">Hash</label>
+        <input type="password" class="form-control" id="hash_input" autocomplete="off">
+        <button type="submit" class="btn btn-primary">Unlock</button>
+    </form>
+    <div id="content" style="display: none;">
+        Nothing to see here!
+    </div>
+    <script>
+        const hash = "8ff7b63542ea7be97937e46956dbcdbdccef439195cbb3bd8be0b73f950b4399251f7150084546a236351f9f7255b6061b32a9f517ae3bac6a165fe7d9bc44c9";
+        const encrypted = "x0PxZBGRBCHqWla5y6AY8hDFVz9RkzbzlXJBqFFL4U/VAfddXBhUriXcvWo+deLvYjSxNk6QmXxEBue9+cefax2d36gcrfHESTJ3gs+bxLRVv8Z+IpTt4hTkJsVLgpxganv3mqXNkM5s7cLZoI5ryxQqZCtNOkGOsZO4xObfmHknwH2TLP6TADHq11RvYKj8jwV5KKZwRF9dlxSJY2nwNA==";
+        decrypt('unlocked');
+    </script>
+</body>
+</html>
