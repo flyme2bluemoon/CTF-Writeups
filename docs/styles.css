@@ -1,0 +1,34 @@
+body {
+    background-color: #32363d;
+}
+
+#title {
+    color: white;
+    margin: 2%;
+    text-align: center;
+}
+
+#hash_form {
+    color: white;
+    margin: 2% 40%;
+}
+
+button {
+    margin: 10px 10px 0px 0px;
+}
+
+#content {
+    background-color: lightgrey;
+    border: 5px;
+    border-color: gray;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px;
+    margin: 0% 5%;
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
