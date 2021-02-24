@@ -19,8 +19,6 @@ with open("writeup.html", "r") as f:
 title = input("title: ")
 passwd = input("passwd: ")
 
-print(passwd == None)
-
 js = ""
 if passwd == "":
     passwd = "unlocked"
